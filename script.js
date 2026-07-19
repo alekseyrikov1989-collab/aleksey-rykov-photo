@@ -3,8 +3,39 @@ const comparisonRange = comparison?.querySelector('.comparison-range');
 
 if (comparison && comparisonRange) {
   const updateComparison = () => comparison.style.setProperty('--pos', `${comparisonRange.value}%`);
+  let userMovedComparison = false;
+
+  const demonstrateComparison = () => {
+    if (userMovedComparison || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    const start = performance.now();
+    const duration = 1250;
+    const from = 46;
+    const to = 68;
+
+    const frame = (now) => {
+      if (userMovedComparison) return;
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      comparisonRange.value = String(from + (to - from) * eased);
+      updateComparison();
+      if (progress < 1) requestAnimationFrame(frame);
+    };
+
+    requestAnimationFrame(frame);
+  };
+
+  comparisonRange.addEventListener('pointerdown', () => { userMovedComparison = true; }, { once: true });
+  comparisonRange.addEventListener('keydown', () => { userMovedComparison = true; }, { once: true });
   comparisonRange.addEventListener('input', updateComparison);
   updateComparison();
+
+  const comparisonObserver = new IntersectionObserver((entries) => {
+    if (entries.some((entry) => entry.isIntersecting)) {
+      setTimeout(demonstrateComparison, 350);
+      comparisonObserver.disconnect();
+    }
+  }, { threshold: 0.45 });
+  comparisonObserver.observe(comparison);
 }
 
 const observer = new IntersectionObserver((entries) => {
