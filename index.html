@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Алексей Рыков бережно реставрирует, раскрашивает и оживляет семейные фотографии. Реставрация от 290 ₽, оживление от 390 ₽.">
+  <meta name="theme-color" content="#f5efe4">
+  <title>Алексей Рыков — возвращаю фотографиям жизнь</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="На главную">
+      <span class="brand-mark" aria-hidden="true">АР</span>
+      <span><b>Алексей Рыков</b><small>мастер семейной фотографии</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Основная навигация">
+      <a href="#works">Работы</a>
+      <a href="#services">Услуги</a>
+      <a href="#about">Обо мне</a>
+    </nav>
+    <a class="header-cta" href="#contact">Обсудить фотографию <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span></span> Бережная работа с семейным архивом</div>
+        <h1>Возвращаю жизнь<br><em>дорогим фотографиям</em></h1>
+        <p class="hero-lead">Восстанавливаю детали, добавляю цвет и оживляю лица — чтобы история вашей семьи снова стала близкой.</p>
+        <div class="hero-actions">
+          <a class="button button-dark" href="#contact">Показать фотографию <span>↗</span></a>
+          <a class="text-link" href="#works">Посмотреть работы <span>↓</span></a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-avatars" aria-hidden="true">
+            <span style="--p:10%"></span><span style="--p:52%"></span><span style="--p:84%"></span>
+          </div>
+          <p><b>Работаю лично</b><br>и внимательно к каждой детали</p>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal reveal-delay">
+        <div class="arch-card">
+          <div class="arch-photo photo-grandma" role="img" aria-label="Восстановленный портрет бабушки"></div>
+          <div class="arch-caption">
+            <span>Семейный архив</span>
+            <span>2026</span>
+          </div>
+        </div>
+        <div class="floating-note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          <span><b>А что, если фото<br>снова улыбнётся?</b><small>Оживление от 390 ₽</small></span>
+        </div>
+        <div class="handwritten">память, которую<br>можно почувствовать</div>
+      </div>
+    </section>
+
+    <section class="memory-strip" aria-label="Преимущества">
+      <span>Чёткие детали</span><i>✦</i><span>Бережная реставрация</span><i>✦</i><span>Живые эмоции</span><i>✦</i><span>Ваша история</span>
+    </section>
+
+    <section class="before-after-section section-pad" id="works">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow"><span></span> Результат можно увидеть</div>
+          <h2>Было выцветшим.<br><em>Стало родным.</em></h2>
+        </div>
+        <p>Я не меняю человека на фотографии — только возвращаю то, что забрали время, царапины и выцветшие краски.</p>
+      </div>
+
+      <div class="comparison reveal" data-comparison>
+        <div class="comparison-image restored photo-grandma"></div>
+        <div class="comparison-image damaged photo-grandma" data-before></div>
+        <div class="damage-layer" data-before></div>
+        <div class="comparison-divider" data-divider><span>↔</span></div>
+        <span class="comparison-label before-label">До</span>
+        <span class="comparison-label after-label">После</span>
+        <input class="comparison-range" type="range" min="0" max="100" value="46" aria-label="Сравнить фотографию до и после">
+      </div>
+      <p class="drag-hint"><span>↔</span> Потяните ползунок, чтобы сравнить</p>
+
+      <div class="portfolio-grid reveal">
+        <article class="work-card work-color">
+          <div class="work-visual photo-crop photo-grandma"><span class="sample-badge">Демо-работа</span></div>
+          <div><span>01</span><h3>Вернул цвет<br>семейному портрету</h3><small>Колоризация · детали · свет</small></div>
+        </article>
+        <article class="work-card work-restore">
+          <div class="work-visual generated-placeholder couple"><span class="sample-badge">Место для работы</span></div>
+          <div><span>02</span><h3>Убрал следы<br>времени и заломы</h3><small>Реставрация · ретушь</small></div>
+        </article>
+        <article class="work-card work-detail">
+          <div class="work-visual generated-placeholder child"><span class="sample-badge">Место для работы</span></div>
+          <div><span>03</span><h3>Сохранил взгляд<br>и живые детали</h3><small>Улучшение качества</small></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="services-section section-pad" id="services">
+      <div class="section-heading light reveal">
+        <div>
+          <div class="eyebrow"><span></span> Что я делаю</div>
+          <h2>У каждой фотографии<br><em>свой способ ожить</em></h2>
+        </div>
+        <p>Напишите и пришлите снимок — я посмотрю его и честно подскажу, что даст лучший результат.</p>
+      </div>
+
+      <div class="services-list reveal">
+        <article class="service-row">
+          <span class="service-number">01</span>
+          <div><h3>Реставрация</h3><p>Уберу царапины, пятна, заломы и восстановлю утраченные фрагменты.</p></div>
+          <strong>от 290 ₽</strong><span class="service-arrow">↗</span>
+        </article>
+        <article class="service-row featured">
+          <span class="service-number">02</span>
+          <div><h3>Оживление фото <b>популярно</b></h3><p>Добавлю естественное движение лица, взгляда и лёгкую улыбку.</p></div>
+          <strong>от 390 ₽</strong><span class="service-arrow">↗</span>
+        </article>
+        <article class="service-row">
+          <span class="service-number">03</span>
+          <div><h3>Колоризация</h3><p>Аккуратно добавлю цвет чёрно-белому снимку, сохраняя атмосферу времени.</p></div>
+          <strong>по оценке</strong><span class="service-arrow">↗</span>
+        </article>
+        <article class="service-row">
+          <span class="service-number">04</span>
+          <div><h3>Улучшение качества</h3><p>Сделаю лица и детали чётче, подготовлю фотографию к печати.</p></div>
+          <strong>по оценке</strong><span class="service-arrow">↗</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="story-section section-pad" id="about">
+      <div class="story-card reveal">
+        <div class="story-photo photo-grandma" aria-hidden="true"></div>
+        <div class="story-copy">
+          <div class="quote-mark">“</div>
+          <blockquote>Для меня это не просто ретушь. Это возможность ещё раз увидеть улыбку близкого человека такой, какой её помнят.</blockquote>
+          <div class="signature"><span>Алексей Рыков</span><small>мастер по реставрации фотографий</small></div>
+        </div>
+      </div>
+
+      <div class="process reveal">
+        <div class="process-intro">
+          <div class="eyebrow"><span></span> Всё просто</div>
+          <h2>От снимка в телефоне<br><em>до семейной истории</em></h2>
+        </div>
+        <ol>
+          <li><span>1</span><div><h3>Пришлите фотографию</h3><p>Можно просто сфотографировать старый снимок на телефон при хорошем свете.</p></div></li>
+          <li><span>2</span><div><h3>Я оценю работу</h3><p>Подскажу варианты, назову точную стоимость и срок до начала работы.</p></div></li>
+          <li><span>3</span><div><h3>Получите результат</h3><p>Сначала покажу превью. После согласования отправлю файл в хорошем качестве.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="reviews section-pad">
+      <div class="section-heading reveal">
+        <div>
+          <div class="eyebrow"><span></span> Слова клиентов</div>
+          <h2>Самая ценная реакция —<br><em>«это же наша бабушка»</em></h2>
+        </div>
+      </div>
+      <div class="review-grid reveal">
+        <article><div class="stars">★★★★★</div><p>«Подарили маме оживлённую фотографию её родителей. Она сначала молчала, потом пересматривала снова и снова. Спасибо за бережность».</p><footer><span>ЕМ</span><div><b>Елена М.</b><small>оживление фото</small></div></footer></article>
+        <article><div class="stars">★★★★★</div><p>«Думал, снимок уже не спасти — половина лица была в заломах. Алексей восстановил так, что папа сразу узнал фотографию из детства».</p><footer><span>АС</span><div><b>Андрей С.</b><small>реставрация</small></div></footer></article>
+        <article><div class="stars">★★★★★</div><p>«Очень по-человечески объяснил, что получится, а что нет. Цвета спокойные, естественные — будто снимок таким и был».</p><footer><span>НК</span><div><b>Наталья К.</b><small>колоризация</small></div></footer></article>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact">
+      <div class="contact-card reveal">
+        <div class="contact-copy">
+          <div class="eyebrow"><span></span> Начнём с одного снимка</div>
+          <h2>Покажите фотографию,<br><em>которую хочется вернуть</em></h2>
+          <p>Напишите в удобный мессенджер и прикрепите снимок. Я бесплатно посмотрю и отвечу, что можно сделать.</p>
+          <div class="social-buttons">
+            <a href="#" data-contact="Telegram">Telegram <span>↗</span></a>
+            <a href="#" data-contact="WhatsApp">WhatsApp <span>↗</span></a>
+            <a href="#" data-contact="MAX">MAX <span>↗</span></a>
+            <a href="#" data-contact="VK">ВКонтакте <span>↗</span></a>
+          </div>
+          <small class="contact-note">Обычно отвечаю в течение часа · ежедневно с 9:00 до 21:00</small>
+        </div>
+        <div class="contact-keepsake">
+          <div class="mini-polaroid"><div class="photo-grandma"></div><span>С любовью,<br>для семьи</span></div>
+          <div class="seal">бережно<br><b>АР</b><br>к памяти</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#top"><span class="brand-mark">АР</span><span><b>Алексей Рыков</b><small>возвращаю фотографиям жизнь</small></span></a>
+    <p>© 2026 · Все работы на странице пока демонстрационные</p>
+    <a href="#top">Наверх ↑</a>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite"><b>Ссылка пока не добавлена</b><span>Замените её на контакт Алексея перед публикацией.</span></div>
+  <script src="script.js"></script>
+</body>
+</html>
